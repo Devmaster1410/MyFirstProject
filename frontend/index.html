@@ -3,48 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airport Transfers Oxford | Chauffeur-Driven Excellence</title>
+    <title>Airport Transfers Oxford</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
         header {
-            background: #004080;
+            background: linear-gradient(120deg, #004080, #1c1c73);
             color: white;
-            padding: 20px;
+            padding: 50px 10px;
             text-align: center;
             position: relative;
         }
         header h1 {
+            font-size: 2.8em;
             margin: 0;
-            font-size: 2.5em;
         }
         header p {
-            margin: 10px 0;
             font-size: 1.2em;
+            margin: 10px 0;
         }
         .book-now {
             position: absolute;
-            top: 50%;
-            right: 10%;
-            transform: translateY(-50%);
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background: #ffcc00;
             color: #004080;
             padding: 15px 30px;
             font-size: 1.2em;
             font-weight: bold;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 50px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            transition: 0.3s ease-in-out;
         }
         .book-now:hover {
             background: #ffd633;
+            transform: translate(-50%, -50%) scale(1.1);
         }
         .section {
-            padding: 20px;
+            padding: 50px 20px;
             text-align: center;
+            background: #f7f9fc;
+        }
+        .section:nth-child(even) {
+            background: #ffffff;
         }
         .services {
             display: flex;
@@ -53,19 +61,23 @@
             gap: 20px;
         }
         .service {
-            background: #f4f4f4;
-            padding: 15px;
-            border-radius: 5px;
-            width: 250px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .service:hover {
+            transform: translateY(-10px);
         }
         .service h3 {
             color: #004080;
         }
         footer {
-            background: #004080;
+            background: #1c1c73;
             color: white;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
         }
         footer p {
@@ -82,43 +94,33 @@
 
     <section class="section" id="about">
         <h2>Welcome to Airport Transfers Oxford</h2>
-        <p>
-            With over 18 years of experience, we specialise in providing premium chauffeur services tailored to meet the needs of business and leisure travellers. From seamless airport transfers to long-distance travel and bespoke UK and European tours, we are committed to delivering comfort, reliability, and professionalism at every step.
-        </p>
+        <p>We specialise in providing premium chauffeur services tailored to meet the needs of business and leisure travellers.</p>
     </section>
 
     <section class="section" id="services">
         <h2>Our Services</h2>
         <div class="services">
             <div class="service">
+                <i class="fa fa-plane fa-3x" style="color: #004080;"></i>
                 <h3>Airport Transfers</h3>
-                <p>Luxury transfers to and from all major UK airports, including Heathrow, Gatwick, Stansted, and Luton. We ensure timely, stress-free journeys.</p>
+                <p>Reliable transport to all major UK airports, tailored to your schedule.</p>
             </div>
             <div class="service">
+                <i class="fa fa-car fa-3x" style="color: #004080;"></i>
                 <h3>Long-Distance Travel</h3>
-                <p>Whether you're heading across the UK for business or pleasure, our long-distance transfer services guarantee a smooth and relaxing journey.</p>
+                <p>Comfortable and professional transport for any destination, no matter how far.</p>
             </div>
             <div class="service">
+                <i class="fa fa-map-marker-alt fa-3x" style="color: #004080;"></i>
                 <h3>UK Tours</h3>
-                <p>Explore the beauty of the UK with our tailored chauffeur-driven tours. From London landmarks to the scenic countryside, we bring your itinerary to life.</p>
+                <p>Guided tours to iconic UK attractions with a personal touch.</p>
             </div>
             <div class="service">
-                <h3>Cotswold Tours</h3>
-                <p>Discover the charm of the Cotswolds with our guided tours. Picture-perfect villages, rolling hills, and personalised itineraries await you.</p>
-            </div>
-            <div class="service">
+                <i class="fa fa-globe fa-3x" style="color: #004080;"></i>
                 <h3>Europe Tours</h3>
-                <p>Embark on a European adventure with our cross-border chauffeur services. Enjoy unparalleled comfort and convenience as you explore Europe.</p>
+                <p>Embark on an unforgettable journey across Europe with our chauffeur services.</p>
             </div>
         </div>
-    </section>
-
-    <section class="section" id="contact">
-        <h2>Contact Us</h2>
-        <p>
-            Ready to book your journey? Contact us today for a personalised quote and expert assistance.
-        </p>
-        <p>Email: info@airporttransfersoxford.com | Phone: +44 123 456 7890</p>
     </section>
 
     <footer>
